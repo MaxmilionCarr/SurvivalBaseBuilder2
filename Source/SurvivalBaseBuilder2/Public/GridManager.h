@@ -32,5 +32,13 @@ public:
 	float TileSize = 100.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Grid")
-	TSubclassOf<ATileActor> TileActorClass;
+	TSubclassOf<ATileActor> TileClass;
+
+	TArray<TArray<ATileActor*>> TileGrid;
+
+	UFUNCTION(BlueprintCallable, Category = "Grid")
+	ATileActor* GetTileAt(int32 X, int32 Y) const;
+
+	UFUNCTION(BlueprintCallable, Category = "Grid")
+	ATileActor* GetTileAtWorldPosition(FVector WorldPosition) const;
 };

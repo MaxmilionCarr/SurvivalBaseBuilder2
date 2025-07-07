@@ -21,12 +21,11 @@ public:
 	UStaticMeshComponent* TileMesh;
 
 	UPROPERTY(VisibleAnywhere)
-	int32 TileX;
-
-	UPROPERTY(VisibleAnywhere)
-	int32 TileY;
-
-	UPROPERTY(VisibleAnywhere)
 	bool bIsOccupied;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	int32 TileX;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	int32 TileY;
 };
