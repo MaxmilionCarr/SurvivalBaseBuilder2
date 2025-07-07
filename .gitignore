@@ -1,0 +1,30 @@
+# Unreal Engine project ignores
+
+# Binaries, builds, intermediates
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# IDE/Editor settings
+.vscode/
+.vs/
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userosscache
+
+# Logs, crash dumps
+*.log
+*.dmp
+
+# Config autosaves (optional)
+Config/DefaultEditor.ini
+Config/DefaultEditorLayout.ini
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
